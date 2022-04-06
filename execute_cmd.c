@@ -9,7 +9,9 @@ void execute_cmd(char *cmd)
 {
 	pid_t pid = 0;
 	int child_status = 0;
-	char *instruction[] = {cmd, NULL};
+	char *path_bin[2];
+	path_bin[0] = cmd;
+	path_bin[1] = NULL;
 
 	pid = fork();
 	if (pid == -1)
