@@ -9,5 +9,5 @@
 #include <sys/wait.h>
 
 void execute_cmd(char *cmd);
+
 #endif
-~                                                                                                                                         ~

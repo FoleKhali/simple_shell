@@ -1,7 +1,7 @@
 #include "sshell.h"
 
 /*
- * execute_cmd - helps execute commands from the prompt
+ * execute_cmd - check if the function works correctly
  * @cmd: pointer
  */
 
