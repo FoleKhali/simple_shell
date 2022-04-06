@@ -7,11 +7,11 @@
 
 int main(void)
 {
+	size_t  size = 0;
+	ssize_t read_b = 0;
 	char *cmd;
 
 	cmd = NULL;
-	size_t  size = 0;
-	ssize_t read_b = 0;
 
 	while (1)
 	{
