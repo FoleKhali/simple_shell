@@ -17,6 +17,12 @@ int main(void)
 	{
 		printf("#cisfun$ ");
 		read_b = getline(&cmd, &size, stdin);
+		if (read_b == -1)
+		{
+			if (cmd)
+				printf("\n");
+			exit(1);
+		}
 		if (strcmp(cmd, "exit\n") == 0)
 		{
 			if (cmd)
