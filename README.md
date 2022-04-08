@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://ml.globenewswire.com/Resource/Download/d138c375-4652-4de1-9ca2-0079e2686576" />
+  <img src= "https://assets.website-files.com/6105315644a26f77912a1ada/610540e8b4cd6969794fe673_Holberton_School_logo-04-04.svg" height="40%" width="30%" />
 </p>
 
 # Simple Shell Project 
