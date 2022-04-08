@@ -1,0 +1,30 @@
+.TH man 2 "April 2022"
+.SH NAME
+.B Simple sHell \- takes commands and execute them
+.SH SYNOPSIS
+.B Simple sHell
+[COMMAND] [OPTION/FILES]
+.SH DESCRIPTION
+.B Simple sHell
+The 
+.B simple sHell
+ is an interpreter that executes commands from the input or from other file.
+
+
+.SH EXAMPLE
+$ /bin/ls
+ AUTHORS    elprompt.c    sshell.h
+ README.md  execute_cmd.c  sHell
+
+$ /bin/pwd
+  /home/simple_shell
+
+$ a
+  ./sHell: No such file or directory
+
+
+.SH REPORTING BUGS
+Keep in mind this is still a very early WIP prototype and may not fully work as intented in every case
+
+.SH AUTHOR
+Dhanna Palomino and Juan Salinas
