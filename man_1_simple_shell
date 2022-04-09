@@ -30,7 +30,6 @@ is an interpreter that executes commands from the input or from other file.
   Sucessful exit!
 
 
-
 .SH REPORTING BUGS
 Keep in mind this is still a very early WIP prototype and may not fully work as intented in every case
 
