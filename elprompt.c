@@ -12,7 +12,7 @@ int main(void)
 	char *cmd;
 
 	cmd = NULL;
-
+	int count = 0;
 	while (1)
 	{
 		printf("#cisfun$ ");
@@ -29,6 +29,11 @@ int main(void)
 				printf("Successful exit!\n");
 			free(cmd);
 			exit(0);
+		}
+		while (environ[count] != NULL)
+		{
+			printf("[%s] \n", environ[count]);
+			count++;
 		}
 		cmd[strlen(cmd) - 1] = '\0';
 		execute_cmd(cmd);
