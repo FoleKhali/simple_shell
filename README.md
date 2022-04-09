@@ -2,7 +2,7 @@
   <img src= "https://assets.website-files.com/6105315644a26f77912a1ada/610540e8b4cd6969794fe673_Holberton_School_logo-04-04.svg" height="40%" width="30%" />
 </p>
 
-# Simple Shell Project 
+# Simple sHell Project 
 
 sHell is a command line interpreter that takes the most basic commands that are present in the shell bash.
 Standard functions and system calls employed in sHell include: access, execve, exit, fork, free, fstat, getline, malloc, perror, signal, stat, wait, write.
