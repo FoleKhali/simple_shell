@@ -9,5 +9,10 @@
 #include <unistd.h>
 
 void execute_cmd(char *cmd);
+int f_space(int ac __attribute__((unused)), char **av);
+unsigned int space(char *str);
+char **tokenizer(char *str);
+extern char **environ;
+int env(int argc, char *argv[]);
 
 #endif
