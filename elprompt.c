@@ -13,9 +13,10 @@ int main(void)
 
 	cmd = NULL;
 	int count = 0;
+
 	while (1)
 	{
-		if (isatty(STDIN_FILENO)==1)
+		if (isatty(STDIN_FILENO) == 1)
 		write(STDOUT_FILENO, "#Cisfun$", 8);
 
 		read_b = getline(&cmd, &size, stdin);
