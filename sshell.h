@@ -19,6 +19,5 @@ int env(int argc, char *argv[]);
 int sp(char *av);
 int _strcmp(char *s1, char *s2);
 int _strlen(char *s);
-a
 
 #endif
