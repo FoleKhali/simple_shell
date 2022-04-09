@@ -21,7 +21,7 @@ void execute_cmd(char *cmd)
 	else if (pid == 0)
 	{
 		if (access(cmd, F_OK) == 0)
-			execve(instruction[0], instruction, NULL);
+			execve(path_bin[0], path_bin, NULL);
 		else
 			perror("./sHell");
 			free(cmd);

@@ -7,6 +7,9 @@
 #include <sys/types.h>
 #include <sys/wait.h>
 #include <unistd.h>
+#include <stddef.h>
+
+extern char **environ;
 
 void execute_cmd(char *cmd);
 
