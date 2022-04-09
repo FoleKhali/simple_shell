@@ -1,0 +1,38 @@
+.TH man 2 "April 2022"
+.SH NAME
+.B Simple sHell \- takes commands and execute them
+.SH SYNOPSIS
+.B Simple sHell
+[COMMAND] [OPTION/FILES]
+.SH DESCRIPTION
+The 
+.B simple sHell
+is an interpreter that executes commands from the input or from other file.
+
+.SH INITIALIZATION
+ To use the simple sHell the user needs to compile using: gcc
+ The simple sHell will compile with the following:
+ gcc -Wall -Wextra -Werror -pedantic *.c -o sHell
+
+.SH EXAMPLE
+#Cisfun$ /bin/ls
+ AUTHORS    elprompt.c    sshell.h
+ README.md  execute_cmd.c  sHell
+
+#Cisfun$ /bin/pwd
+  /home/simple_shell
+
+#Cisfun$ a
+  ./sHell: No such file or directory
+
+
+#Cisfun$ exit
+  Sucessful exit!
+
+
+
+.SH REPORTING BUGS
+Keep in mind this is still a very early WIP prototype and may not fully work as intented in every case
+
+.SH AUTHOR
+Dhanna Palomino and Juan Salinas
