@@ -15,7 +15,9 @@ int main(void)
 	int count = 0;
 	while (1)
 	{
-		printf("#cisfun$ ");
+		if (isatty(STDIN_FILENO)==1)
+		write(STDOUT_FILENO, "#Cisfun$", 8);
+
 		read_b = getline(&cmd, &size, stdin);
 		if (read_b == -1)
 		{
@@ -30,13 +32,13 @@ int main(void)
 			free(cmd);
 			exit(0);
 		}
-		while (environ[count] != NULL)
-		{
-			printf("[%s] \n", environ[count]);
-			count++;
-		}
 		cmd[strlen(cmd) - 1] = '\0';
 		execute_cmd(cmd);
+	}
+	while (environ[count] != NULL)
+	{
+		printf("[%s] \n", environ[count]);
+		count++;
 	}
 	return (0);
 }
