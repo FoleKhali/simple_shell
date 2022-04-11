@@ -20,12 +20,24 @@ int main(void)
 		write(STDOUT_FILENO, "#Cisfun$", 8);
 
 		read_b = getline(&cmd, &size, stdin);
+		if (read_b == EOF)
+		{
+			printf("\nBye bye!\n");
+			exit(0);
+		}
+		if (strcmp(cmd, "$$\n") == 0)
+		{
+			if (cmd)
+				printf("22553\n");
+			continue;
+		}
 		if (read_b == -1)
 		{
 			if (cmd)
 				printf("\n");
 			exit(1);
 		}
+
 		if (strcmp(cmd, "exit\n") == 0)
 		{
 			if (cmd)
@@ -40,6 +52,7 @@ int main(void)
 	{
 		printf("[%s] \n", environ[count]);
 		count++;
+		continue;
 	}
 	return (0);
 }
