@@ -1,7 +1,7 @@
 #include "sshell.h"
 /**
  * execute_cmd - check if the function works correctly
- * @cmd: pointer
+ * @tokens: pointer
  */
 
 void execute_cmd(char *tokens)
