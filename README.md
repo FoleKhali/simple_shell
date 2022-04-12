@@ -7,7 +7,7 @@
 sHell is a command line interpreter that takes the most basic commands that are present in the shell bash.
 Standard functions and system calls employed in sHell include: access, execve, exit, fork, free, fstat, getline, malloc, perror, signal, stat, wait, write.
 
-##Files of this repository
+## Files of this repository
 
 | File      | Description                |
 | :-------- | :------------------------- |
