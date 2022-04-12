@@ -16,7 +16,17 @@ and generally executes other commands.
  The simple sHell will compile with the following:
  gcc -Wall -Wextra -Werror -pedantic *.c -o sHell
 
+.SH BULTINS
+
+env - prints the enviornment variables
+
+exit - quits the program.
+
+Ctrl+C - Implementation of signal when enteringwhen entering ^C
+
 .SH EXAMPLE
+.sp
+.SH INTERACTIVE MODE
 #Cisfun$ /bin/ls
  AUTHORS    elprompt.c    sshell.h
  README.md  execute_cmd.c  sHell
@@ -30,6 +40,12 @@ and generally executes other commands.
 
 #Cisfun$ exit
   Sucessful exit!
+.sp
+.SH NON-INTERACTIVE MODE
+$ echo "/bin/ls" | ./sHell
+.sp
+sHell main.c shell.c test_ls_2
+.sp
 
 
 .SH REPORTING BUGS
