@@ -9,7 +9,7 @@ int the_exit(char **tokens)
 {
 	int i = 0;
 
-	if (_strcmp(tokens[0], "exit\n") == 0)
+	if (_strcmp(tokens[0], "exit") == 0 && tokens[1] == NULL)
 	{
 		printf("Successful exit!\n");
 		while (tokens[i] != NULL)
@@ -34,7 +34,7 @@ int the_env(char **tokens)
 {
 	int c = 0;
 
-	if (_strcmp(tokens[0], "env\n") == 0 && tokens[1] == 1)
+	if (_strcmp(tokens[0], "env") == 0  && tokens[1] == NULL)
 	{
 		while (environ[c] != NULL)
 		{
