@@ -4,6 +4,9 @@
 .SH SYNOPSIS
 .B ./sHell
 [COMMAND] [OPTION/FILES]
+.sp
+.B echo
+[COMMAND][FILE] | ./sHell
 .SH DESCRIPTION
 The 
 .B simple sHell
