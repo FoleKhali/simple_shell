@@ -5,7 +5,7 @@
  * @cmd: command
  * Return: tokens
  */
-char tokenizer(char *cmd)
+char **tokenizer(char *cmd)
 {
 	char **tokens;
 	unsigned int i = 0;
@@ -18,7 +18,7 @@ char tokenizer(char *cmd)
 		exit(0);
 	}
 
-	while ((tokens[i] = strtok(cmd, "\n\t\r ")) != NULL)
+	while ((tokens[i] = strtok(cmd, " \n\t\r")) != NULL)
 	{
 		cmd = NULL;
 		i++;
