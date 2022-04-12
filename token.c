@@ -17,7 +17,6 @@ char tokenizer(char *cmd)
                 exit(0);
 	}
 
-
 	while ((tokens[i] = strtok(cmd, "\n\t\r ")) != NULL)
 	{
 		cmd = NULL;
