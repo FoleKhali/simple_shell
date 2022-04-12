@@ -54,7 +54,8 @@ The shell runs continuously, awaiting and executing commands, until you explicit
 juan@DESKTOP-7TSD7AR:~/shell$ ./sHell
 #Cisfun$
 #Cisfun$ ls
-AUTHORS        elprompt.c      execute_cmd.c    sshell.h    README.md      
+AUTHORS    execute_cmd.c   new_defuncions.c   defuncion.c    README.md
+sHell.c    sshell.h        man_1_simple_shell
 #Cisfun$ exit
 juan@DESKTOP-7TSD7AR:~/shell$
 ```
@@ -63,7 +64,8 @@ juan@DESKTOP-7TSD7AR:~/shell$
 Non-interactive mode, however, is when you indirectly feed commands into the executable hsh file from outside the shell. For example, we can list files by indirectly piping ls into hsh using echo:
 ```bash
 juan@DESKTOP-7TSD7AR:~/shell$ echo "/bin/ls" | ./sHell
-AUTHORS        elprompt.c      execute_cmd.c    sshell.h    README.md               
+AUTHORS    execute_cmd.c   new_defuncions.c   defuncion.c    README.md
+sHell.c    sshell.h        man_1_simple_shell
 juan@DESKTOP-7TSD7AR:~/shell$
 ```
 ## Authors
