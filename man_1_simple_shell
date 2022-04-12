@@ -8,7 +8,9 @@
 The 
 .B simple sHell
 is an interpreter that executes commands from the input or from other file.
-
+.SS Overview
+The simple_shell is a command that reads lines from either a file
+and generally executes other commands.
 .SH INITIALIZATION
  To use the simple sHell the user needs to compile using: gcc
  The simple sHell will compile with the following:
