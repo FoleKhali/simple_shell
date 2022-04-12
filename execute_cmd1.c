@@ -13,8 +13,7 @@ void execute_cmd(char *tokens)
 	path_bin[0] = tokens;
 	path_bin[1] = NULL;
 
-	pid = fork();
-	
+	pid = fork()
 	if (pid == -1)
 	{
 		perror("./sHell");

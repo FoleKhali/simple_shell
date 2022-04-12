@@ -1,8 +1,9 @@
 #include "sshell.h"
 
 /**
- *
- *
+ * tokenizer - token the cmd
+ * @cmd: command
+ * Return: tokens
  */
 char tokenizer(char *cmd)
 {
@@ -11,10 +12,10 @@ char tokenizer(char *cmd)
 
 	tokens = malloc(sizeof(char *) * 1024);
 
-	if(tokens == NULL)
+	if (tokens == NULL)
 	{
 		perror("Can't malloc");
-                exit(0);
+		exit(0);
 	}
 
 	while ((tokens[i] = strtok(cmd, "\n\t\r ")) != NULL)
