@@ -7,6 +7,18 @@
 sHell is a command line interpreter that takes the most basic commands that are present in the shell bash.
 Standard functions and system calls employed in sHell include: access, execve, exit, fork, free, fstat, getline, malloc, perror, signal, stat, wait, write.
 
+##Files of this repository
+
+| File      | Description                |
+| :-------- | :------------------------- |
+|  `sHell.c`           | It contains the entry point of the program, where the execution begins. It shows the prompt and receives the characters written in the command line. |
+|  `sshell.h`          | It is a header file that contains all the c libraries needed for the program, the description and prototypes of all the functions, structures, builtins, printing functions, and helpers. |
+|  `token.c`           | It save the parts to be analyzed later.|
+|  `execute_cmd.c`     | It tries to execute the string as a command. |
+|  `new_defuncions.c`  | It contains the code for the environment and exit function components that are included in the program. |
+|  `defuncion.c`       | It contains the code of the builtins included in the program. |
+|  `man_1_simple_shell`| It is the manual for using the shell. Contains a description, ways for invocation, and some examples of builtins and executables that can be used inside the command line interpreter. |
+|  `AUTHORS`           | It contains the authors of the project |
 
 ## Installation
 
@@ -27,10 +39,14 @@ Standard functions and system calls employed in sHell include: access, execve, e
 | :-------- | :------------------------- |
 |  `ls`     | list and generate statistics for files |
 |  `pwd`    | print working directory                     |
-|  `s`      |  s|
-|  `s`      |  s|
+| `cd`      | change the current working directory |
+| `cp`      | copy content from a source to a destination |
+|  `mkdir`  | creates a directory|
+|  `rm`     | delete files or directories|
+| `mv`      | move items or rename them |
+| `touch`   | create an empty directory (or change the date) |
+| `cat`     | view the content of a text file |
 | `exit`    | exits the shell |
-
 
 ## Interactive Mode
 The shell runs continuously, awaiting and executing commands, until you explicitly exit.
