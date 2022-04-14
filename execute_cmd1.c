@@ -9,7 +9,6 @@ void execute_cmd(char **tokens)
 	pid_t pid = 0;
 	int child_status = 0;
 	char *path_bin[2];
-	int retv = 0;
 
 	path_bin[0] = tokens[0];
 	path_bin[1] = NULL;
@@ -38,7 +37,5 @@ void execute_cmd(char **tokens)
 	else
 	{
 		wait(&child_status);
-		if (WIFEXITED(child_status))
-			retv = WEXITSTATUS(child_status);
 	}
 }
